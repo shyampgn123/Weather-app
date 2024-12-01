@@ -96,7 +96,7 @@ function weather(city) {
 document.querySelector(".main button").addEventListener("click", () => {
     let city = document.querySelector(".main input"); 
     let iptText = document.querySelector(".temp");
-    iptText.innerHTML = "-";
+    iptText.innerHTML = "wait-";
     document.querySelector(".city-name").innerHTML= city.value;
     weather(city.value).then(temp => {
         iptText.innerHTML = temp;
